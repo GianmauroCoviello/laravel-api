@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+// dichiariamo la rotta per l'api controller
 Route::get('/projects', [ProjectController::class, 'index']);
